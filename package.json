@@ -42,7 +42,9 @@
   "devDependencies": {
     "ava": "^0.19.1",
     "eslint": "^3.19.0",
+    "eslint-config-prettier": "^1.7.0",
     "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-prettier": "^2.0.1",
     "husky": "^0.13.3",
     "lint-staged": "^3.4.0",
     "npm-run-all": "^4.0.2",
