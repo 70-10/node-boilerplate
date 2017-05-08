@@ -9,8 +9,8 @@
   },
   "scripts": {
     "clean": "rimraf coverage .nyc_output",
-    "fmt": "prettier --write ./**/*.js",
-    "lint": "eslint --fix ./**/*.js",
+    "fmt": "prettier --write ./{!node_modules}/**/*.js",
+    "lint": "eslint --fix ./{!node_modules}/**/*.js",
     "report": "nyc report --reporter=html",
     "test": "nyc ava",
     "test:coverage": "run-s clean fmt lint test report",
