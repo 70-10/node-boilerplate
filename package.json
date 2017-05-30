@@ -14,7 +14,7 @@
     "test": "nyc ava",
     "test:coverage": "run-s clean lint test report",
     "precommit": "lint-staged",
-    "prepush": "ava"
+    "prepush": "npm run test:coverage"
   },
   "lint-staged": {
     "*.js": [
