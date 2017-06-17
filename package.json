@@ -1,7 +1,7 @@
 {
-  "name": "node-boilerplate",
+  "name": "",
   "version": "0.1.0",
-  "description": "node-boilerplate",
+  "description": "",
   "private": true,
   "main": "index.js",
   "engines": {
@@ -22,17 +22,10 @@
       "git add"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/70-10/node-boilerplate.git"
-  },
+  "repository": "",
   "keywords": [],
-  "author": "70_10",
+  "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/70-10/node-boilerplate/issues"
-  },
-  "homepage": "https://github.com/70-10/node-boilerplate#readme",
   "dependencies": {
     "config": "^1.26.1",
     "debug": "^2.6.8"
