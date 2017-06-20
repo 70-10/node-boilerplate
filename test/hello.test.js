@@ -1,6 +1,8 @@
-const test = require("ava");
+const assert = require("assert");
 const hello = require("../lib/hello.js");
 
-test("hello", t => {
-  t.is(hello(), "hello");
+describe("hello", () => {
+  it("hello", () => {
+    assert(hello() === "hello");
+  });
 });
