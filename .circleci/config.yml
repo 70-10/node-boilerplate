@@ -8,7 +8,7 @@ jobs:
         - checkout
         - run:
             name: module install
-            command: yarn
+            command: npm install
         - run:
             name: test
             command: npm run test:coverage
