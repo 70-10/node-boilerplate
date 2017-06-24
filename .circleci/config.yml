@@ -3,7 +3,7 @@ jobs:
   build:
       working_directory: /node-boilerplate
       docker:
-        - image: node:6-alpine
+        - image: node:8-alpine
       steps:
         - checkout
         - run:
