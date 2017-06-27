@@ -7,6 +7,9 @@ jobs:
       steps:
         - checkout
         - run:
+            name: cache verify
+            command: npm cache verify
+        - run:
             name: module install
             command: npm install
         - run:
