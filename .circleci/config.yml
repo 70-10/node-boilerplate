@@ -1,17 +1,20 @@
 version: 2
 jobs:
   build:
-      working_directory: /node-boilerplate
-      docker:
-        - image: circleci/node:8
-      steps:
-        - checkout
-        - run:
-            name: cache verify
-            command: npm cache verify
-        - run:
-            name: module install
-            command: npm install
-        - run:
-            name: test
-            command: npm run test:coverage
+    working_directory: /node-boilerplate
+    docker:
+      - image: node:8-alpine
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: module install
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: test
+          command: npm run test:coverage
