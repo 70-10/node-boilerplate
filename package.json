@@ -8,7 +8,9 @@
     "node": ">=8"
   },
   "scripts": {
+    "build": "babel src/ -d lib/",
     "clean": "rimraf coverage .nyc_output",
+    "flow": "flow",
     "lint": "eslint .",
     "report": "nyc report --reporter=html",
     "test": "nyc mocha",
@@ -31,11 +33,17 @@
     "debug": "^2.6.8"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-flow": "^6.23.0",
+    "babel-register": "^6.24.1",
     "co-mocha": "^1.2.0",
     "eslint": "^4.1.0",
     "eslint-config-prettier": "^2.2.0",
+    "eslint-plugin-flowtype": "^2.34.1",
     "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-prettier": "^2.1.2",
+    "flow": "^0.2.3",
     "husky": "^0.14.1",
     "intelli-espower-loader": "^1.0.1",
     "lint-staged": "^4.0.0",

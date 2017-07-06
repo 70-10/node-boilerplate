@@ -1,5 +1,5 @@
 const assert = require("assert");
-const hello = require("../lib/hello.js");
+const hello = require("../src/hello.js");
 
 describe("hello", () => {
   it("hello", () => {
