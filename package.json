@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "babel src/ -d lib/",
-    "clean": "rimraf coverage .nyc_output",
+    "clean": "rimraf lib coverage .nyc_output",
     "flow": "flow",
     "lint": "eslint .",
     "report": "nyc report --reporter=html",
