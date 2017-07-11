@@ -44,7 +44,7 @@
     "eslint-plugin-flowtype": "^2.34.1",
     "eslint-plugin-node": "^5.1.0",
     "eslint-plugin-prettier": "^2.1.2",
-    "flow": "^0.2.3",
+    "flow-bin": "^0.49.1",
     "husky": "^0.14.3",
     "intelli-espower-loader": "^1.0.1",
     "lint-staged": "^4.0.1",
