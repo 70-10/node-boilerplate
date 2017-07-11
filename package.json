@@ -15,15 +15,11 @@
     "report": "nyc report --reporter=html",
     "test": "nyc mocha",
     "test:coverage": "run-s clean lint test report",
-    "precommit": "lint-staged",
+    "precommit": "lint-staged && flow",
     "prepush": "npm run test:coverage"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "flow",
-      "git add"
-    ]
+    "*.js": ["eslint --fix", "git add"]
   },
   "repository": "",
   "keywords": [],
