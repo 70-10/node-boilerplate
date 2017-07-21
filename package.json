@@ -19,7 +19,10 @@
     "prepush": "npm run test:coverage"
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"]
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "repository": "",
   "keywords": [],
@@ -37,18 +40,18 @@
     "co-mocha": "^1.2.0",
     "eslint": "^4.2.0",
     "eslint-config-prettier": "^2.3.0",
-    "eslint-plugin-flowtype": "^2.34.1",
-    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-prettier": "^2.1.2",
-    "flow-bin": "^0.49.1",
+    "flow-bin": "^0.50.0",
     "husky": "^0.14.3",
     "intelli-espower-loader": "^1.0.1",
-    "lint-staged": "^4.0.1",
+    "lint-staged": "^4.0.2",
     "mocha": "^3.4.2",
     "npm-run-all": "^4.0.2",
     "nyc": "^11.0.3",
     "power-assert": "^1.4.4",
-    "prettier": "^1.5.2",
+    "prettier": "^1.5.3",
     "rimraf": "^2.6.1"
   }
 }
