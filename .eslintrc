@@ -29,6 +29,8 @@ rules:
         - asyncAwait
   prettier/prettier:
     - error
-    - trailingComma: es5
+    - printWidth: 120
+      parser: flow
+      trailingComma: es5
       singleQuote: false
       semi: true
