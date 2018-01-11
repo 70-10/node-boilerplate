@@ -11,7 +11,7 @@
     "build": "babel src/ -d lib/",
     "clean": "rimraf lib coverage .nyc_output",
     "flow": "flow",
-    "lint": "eslint .",
+    "lint": "prettier-eslint --write ./src/**/*.js",
     "report": "nyc report --reporter=html",
     "test": "nyc mocha",
     "test:coverage": "run-s clean lint test report",
@@ -20,7 +20,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint --fix",
+      "prettier-eslint --write",
       "git add"
     ]
   },
@@ -39,10 +39,8 @@
     "babel-register": "^6.26.0",
     "co-mocha": "^1.2.1",
     "eslint": "^4.15.0",
-    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-flowtype": "^2.41.0",
     "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-prettier": "^2.4.0",
     "flow-bin": "^0.63.1",
     "husky": "^0.14.3",
     "intelli-espower-loader": "^1.0.1",
@@ -52,6 +50,8 @@
     "nyc": "^11.4.1",
     "power-assert": "^1.4.4",
     "prettier": "^1.9.2",
+    "prettier-eslint": "^8.7.3",
+    "prettier-eslint-cli": "^4.7.0",
     "rimraf": "^2.6.2"
   }
 }

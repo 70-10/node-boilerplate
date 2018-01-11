@@ -1,4 +1,5 @@
 // @flow
+
 const config = require("config");
 
 module.exports = () => hello(config.hello);

@@ -7,11 +7,9 @@ parser: babel-eslint
 extends:
   - eslint:recommended
   - plugin:flowtype/recommended
-  - prettier
 plugins:
   - node
   - flowtype
-  - prettier
 parserOptions:
   sourceType: module
   ecmaVersion: 2017
@@ -27,10 +25,3 @@ rules:
     - version: 6
       ignores:
         - asyncAwait
-  prettier/prettier:
-    - error
-    - printWidth: 120
-      parser: flow
-      trailingComma: es5
-      singleQuote: false
-      semi: true
