@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
-    "babel-eslint": "8.2.1",
+    "babel-eslint": "8.2.2",
     "babel-preset-flow": "6.23.0",
     "babel-register": "6.26.0",
     "co-mocha": "1.2.1",
