@@ -41,7 +41,7 @@
     "eslint": "4.15.0",
     "eslint-plugin-flowtype": "2.46.1",
     "eslint-plugin-node": "5.2.1",
-    "flow-bin": "0.63.1",
+    "flow-bin": "0.67.1",
     "husky": "0.14.3",
     "intelli-espower-loader": "1.0.1",
     "lint-staged": "6.0.0",
