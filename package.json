@@ -11,7 +11,7 @@
     "build": "babel src/ -d lib/",
     "clean": "rimraf lib coverage .nyc_output",
     "flow": "flow",
-    "lint": "prettier-eslint --write ./src/**/*.js",
+    "lint": "prettier-eslint --write \"./@(src|test|config)/**/*.js\"",
     "report": "nyc report --reporter=html",
     "test": "nyc mocha",
     "test:coverage": "run-s clean lint test report",
