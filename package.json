@@ -1,22 +1,23 @@
 {
   "name": "",
   "version": "0.1.0",
-  "description": "",
   "private": true,
+  "description": "",
+  "keywords": [],
+  "repository": "",
+  "license": "MIT",
+  "author": "",
   "main": "lib/index.js",
-  "engines": {
-    "node": ">=8"
-  },
   "scripts": {
     "build": "babel src/ -d lib/",
     "clean": "rimraf lib coverage .nyc_output",
     "flow": "flow",
     "lint": "prettier-eslint --write \"./@(src|test|config)/**/*.js\"",
+    "precommit": "lint-staged && flow",
+    "prepush": "npm run test:coverage",
     "report": "nyc report --reporter=html",
     "test": "nyc mocha",
-    "test:coverage": "run-s clean lint test report",
-    "precommit": "lint-staged && flow",
-    "prepush": "npm run test:coverage"
+    "test:coverage": "run-s clean lint test report"
   },
   "lint-staged": {
     "*.js": [
@@ -24,10 +25,6 @@
       "git add"
     ]
   },
-  "repository": "",
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "config": "^3.0.0",
     "debug": "^4.1.0"
@@ -53,5 +50,8 @@
     "prettier-eslint": "^8.8.2",
     "prettier-eslint-cli": "^4.7.1",
     "rimraf": "2.6.2"
+  },
+  "engines": {
+    "node": ">=8"
   }
 }
