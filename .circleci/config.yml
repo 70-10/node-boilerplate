@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/node-boilerplate
     docker:
-      - image: circleci/node:8@sha256:74fa2e27401b46bd01ced3095004617204d4d5fe702fbd7877444cf875c31322
+      - image: circleci/node:8@sha256:786123b72b8a1703cbab85ffca624d3f8caba2f379fe8410137dbf3630899b49
     steps:
       - checkout
       - restore_cache:
