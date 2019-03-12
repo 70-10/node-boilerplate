@@ -1,6 +1,4 @@
-const config = require("config");
-
-module.exports = () => hello(config.hello);
+module.exports = x => hello(x);
 
 function hello(x) {
   if (x) {
